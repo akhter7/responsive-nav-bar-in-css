@@ -1,0 +1,32 @@
+<html>
+<head>
+<link rel="stylesheet" href="lab4.css"/>    
+</head>
+<body>
+<nav>
+<ul class="navbar" id="mainmenu">
+<li><a href="#">HOME</a></li>
+<li><a href="#">CONTACT</a></li>
+<li><a href="#">EVENT</a></li>
+<li class="rightnav"><a href="#" >LOGIN</a></li>
+<li class="rightnav"><a href="#" >SIGN UP</a></li>
+<li class="dropnav"><a href="javascript:void(0);" onclick="displaynavbar();">&#9776</a></li>
+</ul> 
+    
+    <script>
+    function displaynavbar()
+        {
+            var x=document.getElementById("mainmenu");
+            if(x.className === "navbar"){
+                x.className += " responsive"; 
+            }
+            else{
+                x.className="navbar";
+            }
+            
+        }
+    
+    </script>
+</nav>
+</body>
+</html>
